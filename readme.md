@@ -15,6 +15,8 @@ This is my first project to get familiar with Spring framework as I follow cours
 2. We have `@autowired` `SortAlgorithm` to `BinarySearch`  
 3. Thus there is no need to explicitly create an instance of `SortAlgorithm` inside `BinarySearch`.  
 4. This would be automatically taken care by Spring as **Setter Injection** (due to absence of constructor, the default injection is setter)
+5. `BinarySearch` is also a `@Component`. We can get the instance (which is called a Bean) from the `ApplicationContext` itself.
+6. All the dependencies and their respective instances are injected by Spring. Yaaay!!!
 
 ### How to run?
 Run the main function of `HelloWorldApplication.java`
